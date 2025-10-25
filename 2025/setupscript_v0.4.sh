@@ -149,8 +149,8 @@ echo "Installing ntpdate..."
 apt-get -y install ntpsec-ntpdate
 
 # Install seclists
-echo "Install seclists..."
-apt-get -y install seclists
+#echo "Install seclists..."
+#apt-get -y install seclists
 
 # Install rdate
 echo "Installing rdate..."
