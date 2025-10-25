@@ -1,0 +1,266 @@
+Common Sites for Hack The Box (HTB) Research
+
+General Pentest Knowledge & Cheatsheets
+
+HackTricks — encyclopedic techniques and checklists for almost every service: https://book.hacktricks.xyz/
+
+PayloadsAllTheThings — exploitation payloads & edge-case notes: https://github.com/swisskyrepo/PayloadsAllTheThings
+
+0xRicksMind Cheatsheets — concise Linux/Windows/web notes: https://github.com/r1cksec/cheatsheets
+
+Cheatography Security Sheets — quick reminders across topics: https://cheatography.com/tag/security/
+
+Enumeration & Discovery
+
+SecLists — wordlists for dirs, params, usernames, files, DNS, etc.: https://github.com/danielmiessler/SecLists
+
+ffuf wiki & examples — fast fuzzing (dirs/params/vhosts): https://github.com/ffuf/ffuf/wiki
+
+Feroxbuster docs — recursive content discovery: https://github.com/epi052/feroxbuster
+
+DNS: amass docs https://github.com/owasp-amass/amass
+, dnsrecon https://github.com/darkoperator/dnsrecon
+
+Nmap: NSE script docs & categories: https://nmap.org/nsedoc/
+
+WhatWeb & Wappalyzer — tech fingerprinting: https://github.com/urbanadventurer/WhatWeb
+ | https://www.wappalyzer.com/
+
+Web App Exploitation
+
+PortSwigger Web Security Academy — interactive labs & excellent writeups: https://portswigger.net/web-security
+
+OWASP Cheat Sheet Series — authoritative mitigations & test notes: https://cheatsheetseries.owasp.org/
+
+XSS: PortSwigger XSS Cheat Sheet https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+ | xss-cheat-sheet repo https://github.com/tedxyg/xss-cheat-sheet
+
+SQLi: Payload box https://github.com/payloadbox/sql-injection-payload-list
+ | PentestMonkey cheatsheet http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
+
+SSTI: HackTricks SSTI matrix https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection
+
+SSRF: SSRF notes & gadget lists https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SSRF%20Injection
+
+Command Injection: Polyglots & filters bypass: https://github.com/commixproject/commix/wiki/Bypassing-command-filters
+
+File Upload / Path Traversal: Payload patterns: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Directory%20Traversal
+
+WordPress: WPScan vuln DB & usage: https://wpscan.com/
+ | https://github.com/wpscanteam/wpscan
+
+Deserialization: Java/.NET/PHP gadget references: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Insecure%20Deserialization
+
+Shells, Stagers, Evasion
+
+Reverse Shell Cheat Sheet (PentestMonkey): http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+
+revshells.com — one-liners for many interpreters: https://www.revshells.com/
+
+nishang (PowerShell offensive scripts): https://github.com/samratashok/nishang
+
+Chisel docs (TCP tunneling): https://github.com/jpillora/chisel
+
+socat one-liners reference: https://redteamrecipes.com/networking/socat
+
+Privilege Escalation (Linux/Unix)
+
+GTFOBins — living-off-the-land SUID/utility abuse: https://gtfobins.github.io/
+
+PEASS-ng (linPEAS) — automated enum with great hints: https://github.com/carlospolop/PEASS-ng
+
+Linux Privesc Checklist — methodical coverage: https://github.com/sleventyeleven/linuxprivchecker
+ (classic) | https://book.hacktricks.xyz/linux-hardening/privilege-escalation
+
+SUID/Capabilities: Capabilities ref https://man7.org/linux/man-pages/man7/capabilities.7.html
+
+Docker/LXC breakout notes: https://book.hacktricks.xyz/linux-hardening/privilege-escalation/docker-breakout
+
+Privilege Escalation (Windows/AD)
+
+LOLBAS — Windows living-off-the-land binaries: https://lolbas-project.github.io/
+
+LOLBINS (Unix) counterpart: https://loobins.io/
+
+PEASS-ng (winPEAS) — quick wins on Windows: https://github.com/carlospolop/PEASS-ng
+
+HackTricks AD — tickets, relays, delegation, coercion: https://book.hacktricks.xyz/windows-hardening/active-directory-methodology
+
+BloodHound docs — graph attack paths: https://bloodhound.readthedocs.io/
+
+Impacket — fundamental AD protocol tooling: https://github.com/fortra/impacket
+
+PowerView (PowerSploit) — AD enumeration: https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon
+
+Responder & NTLM relays: https://github.com/lgandx/Responder
+ | ntlmrelayx in Impacket
+
+SharpCollection — ported/red-team utilities: https://github.com/Flangvik/SharpCollection
+
+Exploit & Vulnerability Databases
+
+Exploit-DB + searchsploit: https://www.exploit-db.com/
+ | https://github.com/offensive-security/exploitdb
+
+Packet Storm: https://packetstormsecurity.com/
+
+Rapid7 Metasploit Modules: https://docs.rapid7.com/metasploit/
+
+CVE/NVD: https://cve.org/
+ | https://nvd.nist.gov/
+
+Advisories (vendor): Microsoft MSRC https://msrc.microsoft.com/update-guide
+ | Debian/Ubuntu CVEs https://security-tracker.debian.org/
+ https://ubuntu.com/security/cves
+
+Passwords, Hashes, & Wordlists
+
+Hashcat Wiki — modes, examples, rules: https://hashcat.net/wiki/
+
+John the Ripper Jumbo docs: https://www.openwall.com/john/
+
+rockyou.txt sources & notes (SecLists): https://github.com/danielmiessler/SecLists/tree/master/Passwords/Leaked-Databases
+
+Rule Packs: OneRuleToRuleThemAll https://github.com/NotSoSecure/password_cracking_rules
+ | Hob0Rules https://github.com/praetorian-inc/Hob0Rules
+ | Kaonashi https://github.com/kaonashi-passwords/Kaonashi
+
+CrackStation hash lookup: https://crackstation.net/
+
+Have I Been Pwned (API/wordlists): https://haveibeenpwned.com/
+
+Binary Exploitation & Reversing
+
+Ghidra user guide: https://ghidra-sre.org/
+
+radare2 / Cutter docs: https://book.rada.re/
+ | https://cutter.re/
+
+pwntools docs: https://docs.pwntools.com/
+
+glibc / libc DBs (for ret2libc): https://libc.rip/
+
+ROPgadget: https://github.com/JonathanSalwan/ROPgadget
+
+Pwndbg (enhanced GDB): https://pwndbg.re/
+
+Angr (symbolic execution) docs: https://docs.angr.io/
+
+Forensics, PCAP, and Misc Analysis
+
+Wireshark filter ref & user guide: https://www.wireshark.org/docs/wsug_html_chunked/
+
+Volatility (memory forensics): https://volatilityfoundation.org/
+
+Autopsy / Sleuth Kit: https://www.sleuthkit.org/autopsy/
+
+Domain assessment: https://notes.laffin.tech
+
+CyberChef — swiss army knife of data transforms: https://gchq.github.io/CyberChef/
+
+ExifTool docs: https://exiftool.org/
+
+binwalk: https://github.com/ReFirmLabs/binwalk
+
+Aperi’Solve (multi-stego analyzer): https://www.aperisolve.com/
+
+Crypto
+
+RsaCtfTool: https://github.com/RsaCtfTool/RsaCtfTool
+
+factordb: http://factordb.com/
+
+dcode.fr (classical ciphers): https://www.dcode.fr/
+
+SageMath docs (number theory): https://doc.sagemath.org/
+
+Cloud & Containers (when HTB boxes go there)
+
+AWS IAM/IMDS notes: https://book.hacktricks.xyz/cloud-security/aws-security
+
+Azure attack primitives: https://book.hacktricks.xyz/cloud-security/azure-security
+
+GCP attack primitives: https://book.hacktricks.xyz/cloud-security/gcp-security
+
+Kubernetes: attack surface & escapes https://book.hacktricks.xyz/cloud-security/kubernetes
+
+Container escapes: GTFOBins Docker/LXC sections (above) + https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Docker_Security_Cheat_Sheet.md
+
+Protocol & Service-Specific References
+
+SMB: Impacket examples (psexec, wmiexec, smbserver) https://github.com/fortra/impacket/tree/master/examples
+
+SNMP: community strings & OIDs https://book.hacktricks.xyz/network-services-pentesting/snmp
+
+NFS: mount/export pitfalls https://book.hacktricks.xyz/network-services-pentesting/nfs-service
+
+FTP/TFTP: anonymous write/read tricks https://book.hacktricks.xyz/network-services-pentesting/ftp
+
+SMTP: VRFY/EXPN/RCPT tricks; swaks usage https://github.com/jetmore/swaks
+
+SQL Servers: mssqlclient.py, mysql/psql CLI cheats: https://book.hacktricks.xyz/pentesting/pentesting-mssql
+ | https://book.hacktricks.xyz/pentesting/mysql
+ | https://book.hacktricks.xyz/pentesting/postgresql
+
+RDP/WinRM: Evil-WinRM usage https://github.com/Hackplayers/evil-winrm
+
+LDAP/Kerberos: kerberoasting/asreproast/ACLs: https://www.thehacker.recipes/ad
+ (TheHacker.recipes)
+
+Web Servers: Apache/Nginx misconfigs: https://book.hacktricks.xyz/network-services-pentesting/pentesting-web
+
+OSINT & Recon (when scope allows)
+
+Shodan: https://www.shodan.io/
+ | Censys: https://search.censys.io/
+
+crt.sh (CT logs): https://crt.sh/
+
+Wayback Machine: https://web.archive.org/
+
+theHarvester: https://github.com/laramies/theHarvester
+
+Crypto/Encoding/Dev Utilities
+
+Regex testing: https://regex101.com/
+
+JWT debugger: https://jwt.io/
+
+Base64/Hex/Binary tools: CyberChef (above)
+
+UTF-16/UTF-8 quirks & homoglyphs: https://util.unicode.org/UnicodeJsps/confusables.jsp
+
+Learning, Walkthroughs, and Indexes
+
+IppSec Archive: https://ippsec.rocks/
+
+0xdf hacks: https://0xdf.gitlab.io/
+
+HTB Academy modules (official training): https://academy.hackthebox.com/
+
+TryHackMe Learn (overlaps with fundamentals): https://tryhackme.com/paths
+
+GitHub resources: https://github.com/bradyjmcl
+
+PentesterLab references: https://pentesterlab.com/
+
+Tip: for competitive integrity, only consult public writeups after you’ve rooted the box or the season has ended.
+
+Nice-to-Have Collections
+
+Awesome Pentest: curated mega-list: https://github.com/enaqx/awesome-pentest
+
+Awesome Bug Bounty (many web tricks carry over): https://github.com/djadmin/awesome-bug-bounty
+
+Red Team Notes (specterops & friends): https://posts.specterops.io/
+ | https://www.thehacker.recipes/
+
+Vendor & Official Docs You’ll Reference Often
+
+Microsoft Docs (Win internals, AD, PowerShell): https://learn.microsoft.com/
+
+OpenSSL docs (TLS, conversions): https://www.openssl.org/docs/manmaster/man1/
+
+Python stdlib docs (for quick scripting): https://docs.python.org/3/library/
+
+Bash manual & GNU coreutils: https://www.gnu.org/software/coreutils/manual/coreutils.html
